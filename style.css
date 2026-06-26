@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, black);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 600px;
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("assets/image.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  color: white;
+}
+
+.card-header {
+  text-align: left;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 26px;
+  transition: 0.3s ease;
+}
+
+.card-header h2:hover {
+  transform: scale(1.05);
+  color: orange;
+}
+
+.card-header p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card-body {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.card-body p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  font-size: 32px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  color: white;   
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2) sepia(1) saturate(5) hue-rotate(-10deg);
+  box-shadow: 0 0 10px orange;
+}
